@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav-icon {
+		@apply bg-unwhite p-2 rounded-full cursor-pointer w-[40px] h-[40px] ml-2;
+	}
+	.sidebar-item {
+		@apply flex items-center justify-between w-fit gap-5 
+		cursor-pointer text-[17px] pb-7;
+	}
+	.gradient-bg {
+		background: linear-gradient(66deg,#df040a,#000,#ff6b27);
+	}
+	.slide-btn {
+		@apply bg-unwhite rounded-full cursor-pointer 
+		w-[8px] h-[8px];
+	}
+}
+
+@layer utilities {
+	.flex-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+body {
+	background: linear-gradient(342deg,#df040a94,#000,#ff6b277a);
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+}
+
+#app {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 1;
+	background: #000000c7;
+	padding: 15px;
+	overflow: auto;
+}
